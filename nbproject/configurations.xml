@@ -4,6 +4,9 @@
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
                    projectFiles="true">
+      <itemPath>al_frontend.h</itemPath>
+      <itemPath>allegro.h</itemPath>
+      <itemPath>juego.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -12,7 +15,8 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>allegro.c</itemPath>
+      <itemPath>al_frontend.c</itemPath>
+      <itemPath>juego.c</itemPath>
       <itemPath>main.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -54,7 +58,15 @@
           </linkerLibItems>
         </linkerTool>
       </compileType>
-      <item path="allegro.c" ex="false" tool="0" flavor2="0">
+      <item path="al_frontend.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="al_frontend.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="allegro.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="juego.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="juego.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -79,7 +91,15 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="allegro.c" ex="false" tool="0" flavor2="0">
+      <item path="al_frontend.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="al_frontend.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="allegro.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="juego.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="juego.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>

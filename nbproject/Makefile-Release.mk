@@ -35,7 +35,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/allegro.o \
+	${OBJECTDIR}/al_frontend.o \
+	${OBJECTDIR}/juego.o \
 	${OBJECTDIR}/main.o
 
 
@@ -63,10 +64,15 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/pong: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/pong ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/allegro.o: allegro.c
+${OBJECTDIR}/al_frontend.o: al_frontend.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/allegro.o allegro.c
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/al_frontend.o al_frontend.c
+
+${OBJECTDIR}/juego.o: juego.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/juego.o juego.c
 
 ${OBJECTDIR}/main.o: main.c
 	${MKDIR} -p ${OBJECTDIR}
