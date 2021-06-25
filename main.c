@@ -149,7 +149,7 @@ int main(int argc, char** argv)
     al_clear_to_color(al_map_rgb(0, 0, 0));
     al_flip_display();
     
-    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
     
     PALETA paleta1 = {.x=0, .y=BUFFER_H/2 - PALETA_H/2,.dy=4, .w=PALETA_W, .h=PALETA_H};
     PALETA paleta2 = {.x= BUFFER_W - PALETA_W, .y=BUFFER_H/2 - PALETA_H/2, .dy=4,.w=PALETA_W, .h=PALETA_H};
