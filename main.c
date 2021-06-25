@@ -120,6 +120,10 @@ int main(int argc, char** argv)
     
     al_start_timer(timer);
     
+    ////////////////////////////////////////
+    //  Aca comienza el loop
+    ////////////////////////////////////////
+    
     while (!do_exit) {
         ALLEGRO_EVENT ev;
         
@@ -158,6 +162,7 @@ int main(int argc, char** argv)
         }
     }
 
+    al_destroy_event_queue(event_queue);
     al_destroy_bitmap(player2);
     al_destroy_bitmap(player1);
     al_destroy_timer(timer);
